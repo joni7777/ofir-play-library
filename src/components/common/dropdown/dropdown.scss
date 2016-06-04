@@ -1,0 +1,104 @@
+@import '../../../styles/variables';
+
+.common-dropdown {
+  position: relative;
+  cursor: pointer;
+  z-index: 900;
+  flex: 1;
+
+
+  &--opened &-menu { display: block; }
+  &--opened &-label {
+    &__name:before { transform: translateY(2px) rotateZ(225deg); }
+  }
+
+}
+
+// TODO: should probably be called 'toggle' instead of 'label'
+.common-dropdown-label {
+  padding-right: 15px;
+  font-family: $font-helvetica-light;
+
+  &__name {
+    position: relative;
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #21445f;
+
+    &:before {
+      position: absolute;
+      top: calc(50% - 2.5px);
+      right: 0;
+      width: 5px;
+      height: 5px;
+      border-right: 1px solid #378be8;
+      border-bottom: 1px solid #378be8;
+      transform: rotateZ(45deg);
+      transition: .2s ease transform;
+      content: '';
+    }
+  }
+
+  &__selected-value {
+    min-height: 20px;
+    color: #3899ec;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
+
+.common-dropdown-menu {
+  position: absolute;
+  display: none;
+  top: calc(100% + 15px);
+  right: calc(-50% - 20px);
+  min-width: 235px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 16px 0 fade-out(#2c445e, .76);
+
+  &:before {
+    position: absolute;
+    top: -4px;
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    transform: rotateZ(45deg);
+    box-shadow: -2px -2px 4px 0 fade-out(#2c445e, .86);
+    content: '';
+  }
+
+  &__label { margin: 25px 20px 10px; }
+
+  &__list {
+    padding: 10px 20px;
+    min-height: 130px;
+    max-height: 250px;
+    border-bottom: 1px solid #cddae3;
+    overflow: auto;
+
+    label {
+      display: block;
+      padding: 3px 0;
+    }
+
+    input {
+      margin-right: 15px;
+    }
+
+    span {
+      font-family: $font-helvetica;
+      font-size: 14px;
+      color: #0a222f;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px;
+  }
+}

@@ -1,0 +1,33 @@
+.panel {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(#767676, .2);
+  &__header {
+    padding: 24px 42px;
+    border-bottom: solid 1px #dfe5eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 22px;
+    color: #9fadb8;
+    font-family: 'Helvetica Neue Thin', Arial, sans-serif;
+  }
+  &__title_controls {
+    font-size: 16px;
+    font-family: 'Helvetica Neue Light', Arial, sans-serif;
+    color: #9fadb8;
+    label {
+      color: #9fadb8;
+    }
+  }
+}
+
+.panel__conent {
+  padding: 0 42px;
+  padding-bottom: 42px;
+}
+.panel + .panel {
+  margin-top: 28px;
+}

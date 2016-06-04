@@ -1,0 +1,67 @@
+.left-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 192px;
+  background: #fff;
+  &__product_logo {
+    margin: 88px auto 28px auto;
+    height: 84px;
+    width: 84px;
+    border-radius: 50%;
+    background: #3899ec;
+    text-align: center;
+    &:before {
+      content: 'Aa';
+      font-family: 'Helvetica Neue Thin', Arial, sans-serif;
+      font-weight: 200;
+      line-height: 80px;
+      color: #fff;
+      font-size: 42px;
+    }
+  }
+  &__product_name {
+    font-family: 'Helvetica Neue Thin', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #555555;
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      background: transparent url('../../../../images/logo.svg') left center no-repeat;
+      background-size: 38px 16px;
+      height: 16px;
+      width: 38px;
+    }
+    &:after {
+      content: 'Text Finder';
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+  }
+  &__menu {
+    margin-top: 28px;
+    border-top: solid 1px #dfe5eb;
+    &_item {
+      font-family: 'Helvetica Neue Light', Arial, sans-serif;
+      font-size: 16px;
+      text-decoration: none;
+      display: block;
+      color: #162d3d;
+      line-height: 48px;
+      transition: background, color .3s;
+      padding: 0 24px;
+      &--selected {
+        color: #3899ec;
+        border-left: solid 3px #3899ec;
+        padding-left: 21px;
+      }
+      &:hover {
+        background: #e5f7fe;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.app-texts {
+  td, th, a {
+    font-family: Roboto;
+    white-space: normal;
+  }
+  .wrap {
+    white-space: pre-wrap;
+  }
+  a {
+    color: #00BCD4;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.app-texts-new {
+  float: right;
+}

@@ -1,0 +1,16 @@
+.empty {
+  &-logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: #fff url('../../../../..//images/empty.png') center center no-repeat;
+    border-radius: 50%;
+  }
+  h3 {
+    font-family: 'Helvetica Neue Light', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #555;
+    text-align: center;
+  }
+}

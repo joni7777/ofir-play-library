@@ -1,0 +1,42 @@
+.search__input::placeholder {
+  color: #2b5672;
+}
+.search {
+  display: inline-block;
+  vertical-align: middle;
+  &__input {
+    background: transparent;
+    border: 0;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue Light', Arial, sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 36px;
+    padding: 0 10px;
+    width: 300px;
+    transition: all .3s;
+    &:placeholder {
+      color: #2b5672;
+    }
+  }
+  &__icon {
+    cursor: pointer;
+    color: #3d9bec;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+    &:hover {
+      background: #D2EBFE;
+    }
+    .material-icons {
+      line-height: 36px;
+    }
+  }
+}

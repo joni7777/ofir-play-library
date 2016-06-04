@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+
+.wix-modal {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  box-shadow: 0 0 16px 0 fade-out(#2c445e, .76);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.wix-modal-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  background: #2e84e7;
+  border-radius: 8px 8px 0 0;
+  cursor: move;
+  &__title {
+    flex: 1;
+    color: #fff;
+    font-family: $font-helvetica-light;
+    font-size: 16px;
+  }
+
+  &__controls {}
+
+  &__control {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    color: #fff;
+    background: #236bbf;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-family: $font-helvetica-light;
+    font-size: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
+
+.wix-modal-content {}

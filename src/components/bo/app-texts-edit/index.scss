@@ -1,0 +1,15 @@
+.app-texts-edit {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  &__form {
+    height: 100px;
+    width: 300px;
+    margin-right: 34px;
+    flex: 1 100%;
+  }
+  &__info {
+    height: 200px;
+    width: 400px;
+  }
+}

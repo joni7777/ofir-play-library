@@ -1,0 +1,65 @@
+@import "../../../styles/variables";
+
+.text-generator-list,
+.text-generator-list-empty {
+  height: 430px;
+  overflow: auto;
+}
+
+.text-generator-list {
+  flex: 1 0 250px;
+
+  &__row {
+    padding: 30px 80px;
+    font-family: $font-helvetica-light;
+    font-size: 14px;
+    border-bottom: 1px solid #cddae3;
+    text-align: center;
+    color: #21445f;
+    transition: .1s ease-out all;
+
+    // this would be great but parent selector is not extended in libsass (it works in ruby sass)
+    /*&:hover:not(&--selected) { background: #e5f5ff; }*/
+    &:hover:not(.text-generator-list__row--selected) {
+      background: #e5f5ff;
+      cursor: pointer;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+
+    &--selected {
+      background: #2e84e7;
+      color: #fff;
+    }
+  }
+}
+
+.text-generator--loading .text-generator-list__row { opacity: 0; }
+
+.text-generator--loading {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    top: calc(50% - 18px);
+    left: calc(50% - 18px);
+    width: 36px;
+    height: 36px;
+
+    background: url(../../../images/spinner.gif) no-repeat 50% 50%;
+    content: ' ';
+  }
+
+}
+
+.text-generator-list-empty {
+  padding-top: 250px;
+  text-align: center;
+  min-height: 200px;
+  color: #888;
+  background: url(../../../images/empty.png) no-repeat 50% 30%;
+}
+

@@ -1,0 +1,17 @@
+.filter {
+  margin: 10px 0;
+  padding: 20px 0;
+  border-bottom: solid 1px #dfe5eb;
+  .filter__item {
+    width: 250px;
+    display: inline-block;
+    margin-right: 10px;
+    strong {
+      color: #2b5672;
+      font-weight: normal;
+      font-size: 14px;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+  }
+}

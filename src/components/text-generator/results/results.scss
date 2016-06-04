@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+.text-generator-results {
+  padding: 15px 25px;
+  background: #ebf0f3;
+  font-family: $font-helvetica-medium;
+  font-size: 12px;
+  color: #21445f;
+  border-bottom: 1px solid #cddae3;
+
+  &__seo {
+    float: right;
+    cursor: pointer;
+    font-family: $font-helvetica-light;
+
+    &--active { font-family: $font-helvetica-medium; }
+  }
+}
+

@@ -1,0 +1,115 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+body {
+  position: relative;
+  min-height: 2859px;
+  padding-top: 48px;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  background: #e5ebed url(#{$img-path}bg.jpg) no-repeat 50% 48px;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+}
+
+.wix-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 48px;
+  background: url(#{$img-path}header.png) no-repeat 50% 50%;
+  &::after {
+    content: '';
+    height: 48px;
+    width: 437px;
+    background: url(#{$img-path}header-right.png) no-repeat 50% 50%;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}
+
+.wix-toolbar {
+  position: fixed;
+  top: 80px;
+  left: 10px;
+  width: 55px;
+  height: 295px;
+  background: url(#{$img-path}toolbar.png) no-repeat 50% 50%;
+}
+
+.text {
+  max-width: 980px;
+  text-align: center;
+  padding: 0px 45px 0px 45px !important;
+}
+
+.text.title {
+  font: normal normal normal 65px/1.4em georgia,palatino,'book antiqua','palatino linotype',serif;
+  color: #ffffff;
+}
+
+.text.subtitle {
+  font: normal normal normal 28px/1.4em raleway,sans-serif;
+  color: #868686;
+}
+
+.text.description {
+  font: normal normal normal 15px/1.4em raleway,sans-serif;
+  color: #868686;
+}
+
+.editor-6 {
+  .inline-editor {
+    margin-left: -160px;
+    width: 650px;
+  }
+}
+.text.about {
+  font: normal normal normal 20px/1.4em raleway,sans-serif;
+  text-align: left;
+  color: #fff;
+}
+
+.common-label {
+  font-family: $font-helvetica;
+  font-size: 13px;
+  color: #21445f;
+}
+
+.common-button {
+  $color: #fff;
+  $bg-color: #1084eb;
+
+  padding: 8px 18px;
+  color: #fff;
+  background-color: $bg-color;
+  border: 0;
+  border-radius: 20px;
+  font-family: $font-helvetica-light;
+  font-size: 14px;
+  cursor: pointer;
+
+  &:active {
+    color: darken($color, 5);
+    background-color: darken($bg-color, 5);
+  }
+
+  &--inverted {
+    $inverted-color: #1084eb;
+    $inverted-bg-color: #e0f5ff;
+
+    color: $inverted-color;
+    background-color: $inverted-bg-color;
+
+    &:active {
+      color: darken($inverted-color, 5);
+      background-color: darken($inverted-bg-color, 5);
+    }
+  }
+}

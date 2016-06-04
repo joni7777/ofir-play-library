@@ -1,0 +1,23 @@
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 52px;
+  background: #fff;
+  box-shadow: 0 0 5px #767676;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__user {
+    margin-right: 80px;
+  }
+  &__logo {
+    margin-left: 24px;
+    background: transparent url('../../../../images/logo.svg') left center no-repeat;
+    background-size: 60px 24px;
+    height: 24px;
+    width: 60px;
+  }
+}

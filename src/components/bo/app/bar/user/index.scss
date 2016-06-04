@@ -1,0 +1,16 @@
+.user {
+  display: flex;
+  align-items: center;
+  &__title {
+    margin-right: 10px;
+    font-family: 'Helvetica Neue Light', Arial, sans-serif;
+    font-size: 14px;
+    color: #577083;
+  }
+  &__image {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: solid 1px #2882EB;
+  }
+}

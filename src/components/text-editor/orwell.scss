@@ -1,0 +1,52 @@
+#editor {
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 44px;
+  }
+  font-size: 44px;
+  display: block;
+  position: relative;
+  border: 1px solid #171717;
+  color: #171717;
+  width: 500px;
+  height: 309px;
+  margin: 50px auto;
+  cursor: text;
+  @keyframes blinker {
+      50% { opacity: 0.0; }
+  }
+  textarea {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+  context {
+    display: none;
+    position: absolute;
+    width: 500px;
+    border: 1px solid #171717;
+    background-color: white;
+  }
+  context ul {
+    list-style: none;
+    cursor: pointer;
+  }
+  context input {
+    width: 300px;
+  }
+  context button {
+    width: 195px;
+    cursor: pointer;
+  }
+  cursor {
+    display: block;
+    height: 44px;
+    width: 0px;
+    border-left: 2px solid gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: blinker 0.5s linear infinite;
+  }
+}

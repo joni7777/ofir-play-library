@@ -1,0 +1,29 @@
+.select__group {
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: solid 2px #83BDFF;
+    border-left: 0;
+    border-top: 0;
+    line-height: 1.4;
+    margin: 0 12px;
+    margin-left: 0;
+    vertical-align: 3px;
+    transform: rotateZ(45deg);
+  }
+}
+.select__group_item {
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    line-height: 1.4;
+    border-radius: 50%;
+    background: #83BDFF;
+    margin: 0 12px;
+  }
+}

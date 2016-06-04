@@ -1,0 +1,18 @@
+.icon-button {
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  &:hover {
+    background: #eaf7ff;
+  }
+  .material-icons {
+    line-height: 36px;
+    font-size: 20px;
+    color: #3899ec;
+  }
+}
